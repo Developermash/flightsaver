@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flightsaver Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for the Flightsaver mobile app.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+    <main class="page">
+        <article class="document">
+            <p class="eyebrow">Flightsaver</p>
+            <h1>Privacy Policy</h1>
+            <p class="lead">This Privacy Policy explains what data the Flightsaver app uses, why it is needed, where it is stored, and how users can delete their data.</p>
+            <div class="meta">
+                <span>Effective date: June 23, 2026</span>
+                <span>Contact: <a href="mailto:developermash@mail.ru">developermash@mail.ru</a></span>
+            </div>
+            <nav class="language-switch" aria-label="Language">
+                <a href="../ru/">Русский</a>
+                <a href="./" aria-current="page">English</a>
+            </nav>
+
+            <section class="notice">
+                <p>Flightsaver does not sell personal data, does not use advertising tracking, and does not share boarding passes with advertising networks. Data is used to provide app features: flight history, boarding pass presentation, sync, weather, maps, flight status data, and Live Activities.</p>
+            </section>
+
+            <section>
+                <h2>1. Who is responsible for data processing</h2>
+                <p>The Flightsaver app is operated by DeveloperMash, the app developer. For privacy questions, contact <a href="mailto:developermash@mail.ru">developermash@mail.ru</a>.</p>
+            </section>
+
+            <section>
+                <h2>2. Data stored by the app</h2>
+                <p>Flightsaver stores data entered manually by the user, imported from a boarding pass, or received through app features.</p>
+                <div class="section-grid">
+                    <div class="card">
+                        <h3>Flight history</h3>
+                        <p>Flight number, departure and arrival airports, date, departure time, airline, seat, notes, aircraft type, aircraft registration, and other details the user adds or the app retrieves for the flight card.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Boarding passes</h3>
+                        <p>Barcode data and recognized boarding pass fields: passenger, flight, route, date, seat, terminal, gate, zone, boarding group, boarding time, booking reference, sequence number, loyalty program data, baggage tag numbers, and technical fields when present in the pass.</p>
+                    </div>
+                    <div class="card">
+                        <h3>App settings</h3>
+                        <p>Interface preferences, measurement units, iCloud sync state, Live Activities setting, and other local app settings.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>3. Where data is stored</h2>
+                <ul>
+                    <li>The main flight history is stored in the app's local database on the device.</li>
+                    <li>Boarding passes are stored locally in the app's storage and are used to display a boarding pass inside Flightsaver.</li>
+                    <li>If the user enables iCloud sync, flight history is synced through Apple iCloud/CloudKit across the user's devices.</li>
+                    <li>Temporary files received through the Share Extension are placed into the app group container and removed after processing or when the import queue is cleared.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Location</h2>
+                <p>Flightsaver requests "While Using the App" location access. Location is used to show the nearest airport, calculate relevance of airport cards, and hide a boarding pass when the user is already at the arrival airport.</p>
+                <p>The current location is processed by the app on the device. Flightsaver does not send the user's precise current location to its own aviation data server. When Apple system services are used, such as location, reverse geocoding, iCloud, or WeatherKit, data processing is also governed by Apple's terms and policies.</p>
+            </section>
+
+            <section>
+                <h2>5. Camera, photos, PDFs, and files</h2>
+                <p>The camera is used to scan boarding pass barcodes and recognize text. Photos, PDFs, and files are used only when the user selects or shares them with the app.</p>
+                <ul>
+                    <li>Camera frames, selected photos, and PDFs are processed on the device.</li>
+                    <li>Original photos and PDFs are not uploaded to the Flightsaver aviation data server.</li>
+                    <li>After import, the app stores only the data needed for flight history and boarding pass display.</li>
+                    <li>If a file is shared through the system share sheet, it is temporarily copied to the app group container for processing.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Sign in with Apple and iCloud/CloudKit</h2>
+                <p>Sign in with Apple is used to link the local app profile with the user's Apple ID and enable iCloud sync. The app may store the Apple user identifier, name, and email locally on the device if Apple provides those values to the app.</p>
+                <p>iCloud/CloudKit is used to sync flight history between the user's devices. Data in iCloud is processed by Apple and is available to the user through the user's Apple ID. If iCloud is unavailable or the user does not enable sync, the app continues to work locally.</p>
+            </section>
+
+            <section>
+                <h2>7. Live Activities and push tokens</h2>
+                <p>If the user enables Live Activities and the feature is available, the app may create a Live Activity for a flight. To update the Live Activity remotely, the app sends the following data to the Flightsaver server:</p>
+                <ul>
+                    <li>Live Activity push token;</li>
+                    <li>activity identifier and internal flight identifier;</li>
+                    <li>flight number, flight date, departure airport, arrival airport, and route text;</li>
+                    <li>departure time, terminal, gate, baggage belt, and flight status when available;</li>
+                    <li>app language and technical push environment.</li>
+                </ul>
+                <p>This data is used only to update the Live Activity through Apple Push Notification service. The server-side subscription is deleted when the activity ends, expires, or receives an explicit end request. The maximum server-side Live Activity subscription lifetime is limited to 36 hours.</p>
+            </section>
+
+            <section>
+                <h2>8. WeatherKit</h2>
+                <p>Flightsaver uses Apple WeatherKit to display airport weather. To retrieve a forecast, the app sends Apple the coordinates of the relevant airport or selected forecast point. Passenger name, boarding pass content, and booking reference are not sent to WeatherKit.</p>
+            </section>
+
+            <section>
+                <h2>9. Aviation data through the Flightsaver server</h2>
+                <p>To retrieve flight statuses, departure times, terminals, gates, aircraft details, and airport delay data, the app contacts the Flightsaver server. The server keeps API keys out of the app and adapts requests to the selected aviation data provider.</p>
+                <p>The server may use API.market/AeroDataBox, RapidAPI/AeroDataBox, or FR24. The active provider is selected server-side. Requests use only the data needed for the feature: flight number, flight date, airports, route parameters, and technical request parameters. Original boarding pass files, photos, and PDFs are not uploaded to the aviation data server.</p>
+                <p>The server may keep a technical cache of successful responses to improve performance and reduce the number of provider requests. Flight cache is stored within the calculated lifetime for the particular flight, airport delay cache is stored for up to 2 hours, and general technical cache is stored for up to 1 hour unless a shorter period applies to a particular request.</p>
+            </section>
+
+            <section>
+                <h2>10. OpenStreetMap</h2>
+                <p>Flightsaver uses OpenStreetMap tiles to display the route map. When the map is opened, the OpenStreetMap tile provider may receive technical request data, including IP address, device/client parameters, and the coordinates of requested map tiles. These requests do not include the passenger name, booking reference, or boarding pass content.</p>
+            </section>
+
+            <section>
+                <h2>11. Sharing data with third parties</h2>
+                <p>Flightsaver shares data with third parties only to the extent necessary to provide the selected feature:</p>
+                <ul>
+                    <li>Apple - for iCloud/CloudKit, Sign in with Apple, WeatherKit, location, system permissions, Live Activities, and push notifications;</li>
+                    <li>aviation data providers through the Flightsaver server - to retrieve flight and airport data;</li>
+                    <li>OpenStreetMap - to load map tiles.</li>
+                </ul>
+                <p>Flightsaver does not sell personal data and does not use it for advertising profiling.</p>
+            </section>
+
+            <section>
+                <h2>12. Retention periods</h2>
+                <ul>
+                    <li>Flight history and boarding passes are stored until the user deletes them in the app, deletes the app, or clears the corresponding iCloud data.</li>
+                    <li>Local settings are stored until changed by the user or until the app is deleted.</li>
+                    <li>Sign in with Apple data is stored locally until the user signs out locally in the app or deletes the app.</li>
+                    <li>Live Activity subscriptions are stored on the server only while the activity is active and no longer than 36 hours.</li>
+                    <li>Aviation data server cache is stored for a limited period according to the request type.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>13. Deleting data</h2>
+                <p>The user can delete individual flights and boarding passes inside the app. When the app is deleted, local data is removed from the device by iOS. If iCloud sync was enabled, data synced through iCloud/CloudKit may remain in iCloud until the user deletes the corresponding data through the app, iCloud, or Apple system tools.</p>
+                <p>For requests related to data associated with the Flightsaver server, contact <a href="mailto:developermash@mail.ru">developermash@mail.ru</a>.</p>
+            </section>
+
+            <section>
+                <h2>14. Security</h2>
+                <p>Flightsaver uses iOS system mechanisms, iCloud/CloudKit, and HTTPS connections to exchange data with the server and third-party services. Server-side API keys for aviation data providers are not stored in the app.</p>
+            </section>
+
+            <section>
+                <h2>15. Children</h2>
+                <p>Flightsaver is not specifically directed to children and does not knowingly collect data from children. If you believe a child has provided personal data without parental or guardian consent, please contact us.</p>
+            </section>
+
+            <section>
+                <h2>16. Changes to this policy</h2>
+                <p>We may update this Policy when app features, data providers, or legal requirements change. The current version is always available on this page.</p>
+            </section>
+
+            <p class="footer">© 2026 DeveloperMash. Flightsaver.</p>
+        </article>
+    </main>
+</body>
+</html>
